@@ -1,0 +1,22 @@
+
+.grelloLayer {
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+
+.grelloCard {
+    margin: 8px 16px;
+    background-color: white;
+    height: 150px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.grelloLayerContainer {
+    display: flex;
+    flex-direction: flex-start;
+
+}
