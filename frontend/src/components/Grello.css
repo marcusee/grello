@@ -7,11 +7,18 @@
     border-radius: 10px;
 }
 
+.grelloLayerOver {
+    border-color: black;
+    border: 5px;
+    border-style: solid
+}
+
 .grelloCard {
     margin: 8px 16px;
     background-color: white;
-    height: 150px;
     width: 200px;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
 }
 
