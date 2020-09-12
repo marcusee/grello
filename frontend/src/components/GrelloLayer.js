@@ -1,17 +1,15 @@
 import React, {useState, useContext, useEffect} from 'react'
 import GrelloCard from './grelloCard'
-import {BoardContext} from './GrelloBoard'
 import './Grello.css'
 
 function GrelloLayer({layerId, title}) {
 
-    const {boardState, dispatchBoard} = useContext(BoardContext);
     const [dragCounter, setDragCounter] = useState(0);
     const [layerStyle, setLayerStyle] = useState("grelloLayer")
     const [layerState, setLayerState] = useState({});
 
     useEffect(()=> {
-        setLayerState(boardState?.layers[layerId]);
+        // setLayerState(boardState?.layers[layerId]);
     })
 
     return (
@@ -50,7 +48,7 @@ function GrelloLayer({layerId, title}) {
 
             <button onClick = {() => {
                 console.log("FIRE")
-                dispatchBoard ({type:'addCard' , payload: "HI"})
+                // dispatchBoard ({type:'addCard' , payload: "HI"})
             }}
             > 
                 Add Card

@@ -2,9 +2,6 @@ import React from 'react'
 import './Grello.css'
 
 function GrelloCard({title, description}) {
-    
-    
-    
     return (
         <div
             draggable
